@@ -1,0 +1,26 @@
+<div class="container  border " >
+
+ <h5 class="text text-success" > Employee List  </h5>
+
+ <table class="table table-striped  table-bordered" >
+    <tr>
+        <th> ID </th>
+        <th> First Name </th>
+        <th> Last Name </th>
+        <th> Email </th>
+    </tr>
+
+   <tr  *ngFor="let specificemployee of listOfEmployee"  >
+      <td> {{ specificemployee.id  }} </td>
+      <td> {{ specificemployee.firstName  }} </td>
+      <td>{{ specificemployee.lastName }}</td>
+       <td>{{ specificemployee.email }}</td>
+   </tr>
+
+
+ </table>
+
+
+
+
+</div>
